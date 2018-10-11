@@ -4,7 +4,7 @@
 
 datalen = 100;
 iterations = 1;
-snr_steps = 1000;
+snr_steps = 100;
 
 
 BER_vec = zeros(1, snr_steps);
@@ -26,7 +26,4 @@ for step = 1:snr_steps
     BER_vec2(step) = BER2;
 end
 
-plot(BER_vec);
-hold on;
-plot(BER_vec2);
-hold off;
+plot(BER_vec, );plot(BER_vec2);
